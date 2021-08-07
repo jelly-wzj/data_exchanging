@@ -1,13 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f5b60946-13f5-4b3b-9fd7-8129de244d1a" name="Default Changelist" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/elasticsearch/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/log.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestCrawler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/auto_migrate.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/colly.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/context.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/crawler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/enu.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/errors.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/output.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/task.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/task_config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/task_rule.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/test/baidu_news.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/types.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,19 +71,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
-    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/utils" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/crawler/test" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/utils" />
-      <recent name="$PROJECT_DIR$/src/elasticsearch" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/elasticsearch" />
       <recent name="$PROJECT_DIR$/src/client" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/crawler/test" />
+      <recent name="$PROJECT_DIR$/src/crawler" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/src/elasticsearch" />
     </key>
   </component>
   <component name="RunManager">
@@ -76,6 +109,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <option name="LAST_COMMIT_MESSAGE" value="init" />
@@ -93,10 +137,10 @@
       <screen x="40" y="0" width="1326" height="768" />
     </state>
     <state x="166" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog/40.0.1326.768@40.0.1326.768" timestamp="1628303608573" />
-    <state x="437" y="121" key="FileChooserDialogImpl" timestamp="1628301960491">
+    <state x="437" y="121" key="FileChooserDialogImpl" timestamp="1628328624892">
       <screen x="40" y="0" width="1326" height="768" />
     </state>
-    <state x="437" y="121" key="FileChooserDialogImpl/40.0.1326.768@40.0.1326.768" timestamp="1628301960491" />
+    <state x="437" y="121" key="FileChooserDialogImpl/40.0.1326.768@40.0.1326.768" timestamp="1628328624892" />
     <state width="1280" height="156" key="GridCell.Tab.0.bottom" timestamp="1628307849427">
       <screen x="40" y="0" width="1326" height="768" />
     </state>
@@ -113,13 +157,24 @@
       <screen x="40" y="0" width="1326" height="768" />
     </state>
     <state width="1280" height="156" key="GridCell.Tab.0.right/40.0.1326.768@40.0.1326.768" timestamp="1628307849425" />
-    <state x="110" y="26" key="SettingsEditor" timestamp="1628267208813">
+    <state x="110" y="26" key="SettingsEditor" timestamp="1628329192376">
       <screen x="40" y="0" width="1326" height="768" />
     </state>
-    <state x="110" y="26" key="SettingsEditor/40.0.1326.768@40.0.1326.768" timestamp="1628267208813" />
-    <state x="302" y="99" key="Vcs.Push.Dialog.v2" timestamp="1628305512237">
+    <state x="110" y="26" key="SettingsEditor/40.0.1326.768@40.0.1326.768" timestamp="1628329192376" />
+    <state x="302" y="99" key="Vcs.Push.Dialog.v2" timestamp="1628323996174">
       <screen x="40" y="0" width="1326" height="768" />
     </state>
-    <state x="302" y="99" key="Vcs.Push.Dialog.v2/40.0.1326.768@40.0.1326.768" timestamp="1628305512237" />
+    <state x="302" y="99" key="Vcs.Push.Dialog.v2/40.0.1326.768@40.0.1326.768" timestamp="1628323996174" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/TestCrawler.go</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
