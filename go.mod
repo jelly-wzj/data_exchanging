@@ -6,6 +6,8 @@ require (
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575
 	github.com/elazarl/goproxy v0.0.0-20210801061803-8e322dfb79c4 // indirect
 	github.com/fatih/color v1.12.0 // indirect
+	github.com/jessevdk/go-flags v1.5.0
+	github.com/mattn/go-isatty v0.0.12
 	github.com/mattn/go-runewidth v0.0.13 // indirect
 	github.com/parnurzeal/gorequest v0.2.16
 	github.com/pkg/errors v0.9.1 // indirect
