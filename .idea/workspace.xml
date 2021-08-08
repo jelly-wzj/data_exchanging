@@ -20,23 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5b60946-13f5-4b3b-9fd7-8129de244d1a" name="Default Changelist" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/TestCrawler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/auto_migrate.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/colly.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/context.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/crawler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/db.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/enu.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/errors.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/output.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/task.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/task_config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/task_rule.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/test/baidu_news.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crawler/types.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestCrawler.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestCrawler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawler/crawler.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/crawler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawler/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crawler/task_config.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/task_config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,15 +67,17 @@
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/elasticsearch" />
-      <recent name="$PROJECT_DIR$/src/client" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/crawler/test" />
       <recent name="$PROJECT_DIR$/src/crawler" />
       <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/src/elasticsearch" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+      <recent name="$PROJECT_DIR$/src/db" />
+      <recent name="$PROJECT_DIR$/src/crawler/test2" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/elasticsearch" />
     </key>
   </component>
@@ -119,6 +111,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
@@ -141,22 +134,38 @@
       <screen x="40" y="0" width="1326" height="768" />
     </state>
     <state x="437" y="121" key="FileChooserDialogImpl/40.0.1326.768@40.0.1326.768" timestamp="1628328624892" />
-    <state width="1280" height="156" key="GridCell.Tab.0.bottom" timestamp="1628307849427">
+    <state width="1280" height="232" key="GridCell.Tab.0.bottom" timestamp="1628422311669">
       <screen x="40" y="0" width="1326" height="768" />
     </state>
-    <state width="1280" height="156" key="GridCell.Tab.0.bottom/40.0.1326.768@40.0.1326.768" timestamp="1628307849427" />
-    <state width="1280" height="156" key="GridCell.Tab.0.center" timestamp="1628307849424">
+    <state width="1280" height="232" key="GridCell.Tab.0.bottom/40.0.1326.768@40.0.1326.768" timestamp="1628422311669" />
+    <state width="1280" height="232" key="GridCell.Tab.0.center" timestamp="1628422311668">
       <screen x="40" y="0" width="1326" height="768" />
     </state>
-    <state width="1280" height="156" key="GridCell.Tab.0.center/40.0.1326.768@40.0.1326.768" timestamp="1628307849424" />
-    <state width="1280" height="156" key="GridCell.Tab.0.left" timestamp="1628307849422">
+    <state width="1280" height="232" key="GridCell.Tab.0.center/40.0.1326.768@40.0.1326.768" timestamp="1628422311668" />
+    <state width="1280" height="232" key="GridCell.Tab.0.left" timestamp="1628422311668">
       <screen x="40" y="0" width="1326" height="768" />
     </state>
-    <state width="1280" height="156" key="GridCell.Tab.0.left/40.0.1326.768@40.0.1326.768" timestamp="1628307849422" />
-    <state width="1280" height="156" key="GridCell.Tab.0.right" timestamp="1628307849425">
+    <state width="1280" height="232" key="GridCell.Tab.0.left/40.0.1326.768@40.0.1326.768" timestamp="1628422311668" />
+    <state width="1280" height="232" key="GridCell.Tab.0.right" timestamp="1628422311668">
       <screen x="40" y="0" width="1326" height="768" />
     </state>
-    <state width="1280" height="156" key="GridCell.Tab.0.right/40.0.1326.768@40.0.1326.768" timestamp="1628307849425" />
+    <state width="1280" height="232" key="GridCell.Tab.0.right/40.0.1326.768@40.0.1326.768" timestamp="1628422311668" />
+    <state width="1280" height="232" key="GridCell.Tab.1.bottom" timestamp="1628422311670">
+      <screen x="40" y="0" width="1326" height="768" />
+    </state>
+    <state width="1280" height="232" key="GridCell.Tab.1.bottom/40.0.1326.768@40.0.1326.768" timestamp="1628422311670" />
+    <state width="1280" height="232" key="GridCell.Tab.1.center" timestamp="1628422311669">
+      <screen x="40" y="0" width="1326" height="768" />
+    </state>
+    <state width="1280" height="232" key="GridCell.Tab.1.center/40.0.1326.768@40.0.1326.768" timestamp="1628422311669" />
+    <state width="1280" height="232" key="GridCell.Tab.1.left" timestamp="1628422311669">
+      <screen x="40" y="0" width="1326" height="768" />
+    </state>
+    <state width="1280" height="232" key="GridCell.Tab.1.left/40.0.1326.768@40.0.1326.768" timestamp="1628422311669" />
+    <state width="1280" height="232" key="GridCell.Tab.1.right" timestamp="1628422311670">
+      <screen x="40" y="0" width="1326" height="768" />
+    </state>
+    <state width="1280" height="232" key="GridCell.Tab.1.right/40.0.1326.768@40.0.1326.768" timestamp="1628422311670" />
     <state x="110" y="26" key="SettingsEditor" timestamp="1628329192376">
       <screen x="40" y="0" width="1326" height="768" />
     </state>
@@ -170,9 +179,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/src/TestCrawler.go</url>
+          <url>file://$PROJECT_DIR$/src/test/TestCrawler.go</url>
           <line>2</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/crawler/crawler.go</url>
+          <line>53</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

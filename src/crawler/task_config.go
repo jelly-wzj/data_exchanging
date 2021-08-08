@@ -2,6 +2,7 @@ package crawler
 
 import (
 	"crypto/tls"
+	"data_exchanging/src/db"
 	"net/http"
 	"regexp"
 	"time"
@@ -57,7 +58,7 @@ type Limit struct {
 type OutputConfig struct {
 	Type      string
 	CSVConf   CSVConf
-	MySQLConf MySQLConf
+	MySQLConf db.MySQLConf
 }
 
 // CSVConf is the csv conf of a task

@@ -2,6 +2,7 @@ package crawler
 
 import (
 	"context"
+	db2 "data_exchanging/src/db"
 	"database/sql"
 	"fmt"
 	"runtime/debug"
@@ -63,7 +64,7 @@ func (s *Crawler) Run() error {
 			if s.db != nil {
 				ctx.setOutputDB(s.db)
 			} else {
-				db, err := NewDB(s.task.OutputConfig.MySQLConf)
+				db, err := db2.NewDB(s.task.OutputConfig.MySQLConf)
 				if err != nil {
 					return err
 				}
@@ -82,7 +83,7 @@ func (s *Crawler) Run() error {
 		if s.db != nil {
 			headCtx.setOutputDB(s.db)
 		} else {
-			db, err := NewDB(s.task.OutputConfig.MySQLConf)
+			db, err := db2.NewDB(s.task.OutputConfig.MySQLConf)
 			if err != nil {
 				return err
 			}
