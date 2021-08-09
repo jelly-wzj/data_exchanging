@@ -20,14 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5b60946-13f5-4b3b-9fd7-8129de244d1a" name="Default Changelist" comment="init">
+      <change afterPath="$PROJECT_DIR$/src/spider/crawler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/grep.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/linkfinder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/linkfinder_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/othersource.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/othersource_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/output.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/robots.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/sitemap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/spider.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/utils_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/version.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/filter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/set.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestCrawler.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestCrawler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawler/crawler.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/crawler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawler/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crawler/task_config.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/crawler/task_config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestRuleCrawler.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestRuleCrawler.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +54,12 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="$PROJECT_DIR$/../../../home/jelly/sorfware/go" />
+  <component name="GOROOT" path="/media/jelly/Home/jelly/woker/software/go1.16.7.linux-amd64/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -63,16 +79,11 @@
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/crawler/test" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/spider" />
+    <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/crawler/test" />
-      <recent name="$PROJECT_DIR$/src/crawler" />
-      <recent name="$PROJECT_DIR$/src/utils" />
-      <recent name="$PROJECT_DIR$/src/elasticsearch" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src/db" />
@@ -80,8 +91,15 @@
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/elasticsearch" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/spider" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/src/crawler/test" />
+      <recent name="$PROJECT_DIR$/src/crawler" />
+      <recent name="$PROJECT_DIR$/src/elasticsearch" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build main.go">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="data_exchanging" />
       <working_directory value="$PROJECT_DIR$" />
@@ -91,9 +109,45 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestGetExtType in data_exchanging/src/spider" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="data_exchanging" />
+      <working_directory value="$PROJECT_DIR$/src/spider" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="data_exchanging/src/spider" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestGetExtType$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestOtherSources in data_exchanging/src/spider" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="data_exchanging" />
+      <working_directory value="$PROJECT_DIR$/src/spider" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="data_exchanging/src/spider" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestOtherSources$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_ParseJSSource in data_exchanging/src/spider" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="data_exchanging" />
+      <working_directory value="$PROJECT_DIR$/src/spider" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="data_exchanging/src/spider" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^Test_ParseJSSource$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Test.TestGetExtType in data_exchanging/src/spider" />
+        <item itemvalue="Go Test.TestOtherSources in data_exchanging/src/spider" />
+        <item itemvalue="Go Test.Test_ParseJSSource in data_exchanging/src/spider" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +175,7 @@
     <integration-enabled>true</integration-enabled>
     <environment>
       <map>
-        <entry key="GOPROXY" value="https://goproxy.cn,direct" />
+        <entry key="GOPROXY" value="https://goproxy.cn" />
       </map>
     </environment>
   </component>
@@ -130,63 +184,112 @@
       <screen x="40" y="0" width="1326" height="768" />
     </state>
     <state x="166" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog/40.0.1326.768@40.0.1326.768" timestamp="1628303608573" />
-    <state x="437" y="121" key="FileChooserDialogImpl" timestamp="1628328624892">
-      <screen x="40" y="0" width="1326" height="768" />
+    <state x="507" y="142" key="FileChooserDialogImpl" timestamp="1628472659200">
+      <screen x="40" y="0" width="1560" height="900" />
     </state>
     <state x="437" y="121" key="FileChooserDialogImpl/40.0.1326.768@40.0.1326.768" timestamp="1628328624892" />
-    <state width="1280" height="232" key="GridCell.Tab.0.bottom" timestamp="1628422311669">
-      <screen x="40" y="0" width="1326" height="768" />
+    <state x="507" y="142" key="FileChooserDialogImpl/40.0.1560.900@40.0.1560.900" timestamp="1628472659200" />
+    <state width="1514" height="289" key="GridCell.Tab.0.bottom" timestamp="1628480496187">
+      <screen x="40" y="0" width="1560" height="900" />
     </state>
     <state width="1280" height="232" key="GridCell.Tab.0.bottom/40.0.1326.768@40.0.1326.768" timestamp="1628422311669" />
-    <state width="1280" height="232" key="GridCell.Tab.0.center" timestamp="1628422311668">
-      <screen x="40" y="0" width="1326" height="768" />
+    <state width="1514" height="289" key="GridCell.Tab.0.bottom/40.0.1560.900@40.0.1560.900" timestamp="1628480496187" />
+    <state width="1514" height="289" key="GridCell.Tab.0.center" timestamp="1628480496187">
+      <screen x="40" y="0" width="1560" height="900" />
     </state>
     <state width="1280" height="232" key="GridCell.Tab.0.center/40.0.1326.768@40.0.1326.768" timestamp="1628422311668" />
-    <state width="1280" height="232" key="GridCell.Tab.0.left" timestamp="1628422311668">
-      <screen x="40" y="0" width="1326" height="768" />
+    <state width="1514" height="289" key="GridCell.Tab.0.center/40.0.1560.900@40.0.1560.900" timestamp="1628480496187" />
+    <state width="1514" height="289" key="GridCell.Tab.0.left" timestamp="1628480496187">
+      <screen x="40" y="0" width="1560" height="900" />
     </state>
     <state width="1280" height="232" key="GridCell.Tab.0.left/40.0.1326.768@40.0.1326.768" timestamp="1628422311668" />
-    <state width="1280" height="232" key="GridCell.Tab.0.right" timestamp="1628422311668">
-      <screen x="40" y="0" width="1326" height="768" />
+    <state width="1514" height="289" key="GridCell.Tab.0.left/40.0.1560.900@40.0.1560.900" timestamp="1628480496187" />
+    <state width="1514" height="289" key="GridCell.Tab.0.right" timestamp="1628480496187">
+      <screen x="40" y="0" width="1560" height="900" />
     </state>
     <state width="1280" height="232" key="GridCell.Tab.0.right/40.0.1326.768@40.0.1326.768" timestamp="1628422311668" />
-    <state width="1280" height="232" key="GridCell.Tab.1.bottom" timestamp="1628422311670">
-      <screen x="40" y="0" width="1326" height="768" />
+    <state width="1514" height="289" key="GridCell.Tab.0.right/40.0.1560.900@40.0.1560.900" timestamp="1628480496187" />
+    <state width="1514" height="192" key="GridCell.Tab.1.bottom" timestamp="1628479317034">
+      <screen x="40" y="0" width="1560" height="900" />
     </state>
     <state width="1280" height="232" key="GridCell.Tab.1.bottom/40.0.1326.768@40.0.1326.768" timestamp="1628422311670" />
-    <state width="1280" height="232" key="GridCell.Tab.1.center" timestamp="1628422311669">
-      <screen x="40" y="0" width="1326" height="768" />
+    <state width="1514" height="192" key="GridCell.Tab.1.bottom/40.0.1560.900@40.0.1560.900" timestamp="1628479317034" />
+    <state width="1514" height="192" key="GridCell.Tab.1.center" timestamp="1628479317034">
+      <screen x="40" y="0" width="1560" height="900" />
     </state>
     <state width="1280" height="232" key="GridCell.Tab.1.center/40.0.1326.768@40.0.1326.768" timestamp="1628422311669" />
-    <state width="1280" height="232" key="GridCell.Tab.1.left" timestamp="1628422311669">
-      <screen x="40" y="0" width="1326" height="768" />
+    <state width="1514" height="192" key="GridCell.Tab.1.center/40.0.1560.900@40.0.1560.900" timestamp="1628479317034" />
+    <state width="1514" height="192" key="GridCell.Tab.1.left" timestamp="1628479317034">
+      <screen x="40" y="0" width="1560" height="900" />
     </state>
     <state width="1280" height="232" key="GridCell.Tab.1.left/40.0.1326.768@40.0.1326.768" timestamp="1628422311669" />
-    <state width="1280" height="232" key="GridCell.Tab.1.right" timestamp="1628422311670">
-      <screen x="40" y="0" width="1326" height="768" />
+    <state width="1514" height="192" key="GridCell.Tab.1.left/40.0.1560.900@40.0.1560.900" timestamp="1628479317034" />
+    <state width="1514" height="192" key="GridCell.Tab.1.right" timestamp="1628479317034">
+      <screen x="40" y="0" width="1560" height="900" />
     </state>
     <state width="1280" height="232" key="GridCell.Tab.1.right/40.0.1326.768@40.0.1326.768" timestamp="1628422311670" />
-    <state x="110" y="26" key="SettingsEditor" timestamp="1628329192376">
-      <screen x="40" y="0" width="1326" height="768" />
+    <state width="1514" height="192" key="GridCell.Tab.1.right/40.0.1560.900@40.0.1560.900" timestamp="1628479317034" />
+    <state x="122" y="30" key="SettingsEditor" timestamp="1628472662014">
+      <screen x="40" y="0" width="1560" height="900" />
     </state>
     <state x="110" y="26" key="SettingsEditor/40.0.1326.768@40.0.1326.768" timestamp="1628329192376" />
+    <state x="122" y="30" key="SettingsEditor/40.0.1560.900@40.0.1560.900" timestamp="1628472662014" />
     <state x="302" y="99" key="Vcs.Push.Dialog.v2" timestamp="1628323996174">
       <screen x="40" y="0" width="1326" height="768" />
     </state>
     <state x="302" y="99" key="Vcs.Push.Dialog.v2/40.0.1326.768@40.0.1326.768" timestamp="1628323996174" />
+    <state x="337" y="146" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1628473449209">
+      <screen x="40" y="0" width="1560" height="900" />
+    </state>
+    <state x="337" y="146" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/40.0.1560.900@40.0.1560.900" timestamp="1628473449209" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/src/test/TestCrawler.go</url>
-          <line>2</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/crawler/test/baidu_news.go</url>
+          <line>77</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/src/crawler/crawler.go</url>
-          <line>53</line>
-          <option name="timeStamp" value="4" />
+          <line>142</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/crawler/crawler.go</url>
+          <line>201</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../../pkg/mod/github.com/gocolly/colly@v1.2.0/colly.go</url>
+          <line>761</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/crawler/crawler.go</url>
+          <line>204</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/crawler/colly.go</url>
+          <line>79</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/crawler/test/baidu_news.go</url>
+          <line>50</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/spider/crawler.go</url>
+          <line>2</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/spider/grep.go</url>
+          <line>2</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

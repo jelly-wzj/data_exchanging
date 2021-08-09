@@ -1,7 +1,9 @@
 package main
 
-import "data_exchanging/src/test"
+import "data_exchanging/src/spider"
 
 func main() {
-	test.TestRuleCrawler()
+	//test.TestRuleCrawler()
+	spider.DoSpider()
+
 }

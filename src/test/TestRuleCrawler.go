@@ -11,9 +11,9 @@ import (
 
 func TestRuleCrawler() {
 	task := &Task{
-		TaskRuleName: "百度新闻规则",
-		OptMaxDepth:  5,
-		OutputType:   "csv",
+		TaskRuleName:      "百度新闻规则",
+		OptAllowedDomains: "news.baidu.com",
+		OutputType:        "csv",
 	}
 	rule, _ := crawler.GetTaskRule(task.TaskRuleName)
 
