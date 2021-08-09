@@ -20,10 +20,10 @@ var commands = &cobra.Command{
 }
 
 func DoSpider() {
-	commands.Flags().StringP("site", "s", "", "Site to crawl")
+	commands.Flags().StringP("site", "s", "https://news.baidu.com", "Site to crawl")
 	commands.Flags().StringP("sites", "S", "", "Site list to crawl")
 	commands.Flags().StringP("proxy", "p", "", "Proxy (Ex: http://127.0.0.1:8080)")
-	commands.Flags().StringP("output", "o", "", "Output folder")
+	commands.Flags().StringP("output", "o", "/home/jelly/Desktop/news", "Output folder")
 	commands.Flags().StringP("user-agent", "u", "web", "User Agent to use\n\tweb: random web user-agent\n\tmobi: random mobile user-agent\n\tor you can set your special user-agent")
 	commands.Flags().StringP("cookie", "", "", "Cookie to use (testA=a; testB=b)")
 	commands.Flags().StringArrayP("header", "H", []string{}, "Header to use (Use multiple flag to set multiple header)")
@@ -35,7 +35,7 @@ func DoSpider() {
 
 	commands.Flags().IntP("threads", "t", 1, "Number of threads (Run sites in parallel)")
 	commands.Flags().IntP("concurrent", "c", 5, "The number of the maximum allowed concurrent requests of the matching domains")
-	commands.Flags().IntP("depth", "d", 1, "MaxDepth limits the recursion depth of visited URLs. (Set it to 0 for infinite recursion)")
+	commands.Flags().IntP("depth", "d", 5, "MaxDepth limits the recursion depth of visited URLs. (Set it to 0 for infinite recursion)")
 	commands.Flags().IntP("delay", "k", 0, "Delay is the duration to wait before creating a new request to the matching domains (second)")
 	commands.Flags().IntP("random-delay", "K", 0, "RandomDelay is the extra randomized duration to wait added to Delay before creating a new request (second)")
 	commands.Flags().IntP("timeout", "m", 10, "Request timeout (second)")
@@ -50,13 +50,13 @@ func DoSpider() {
 	commands.Flags().BoolP("subs", "", false, "Include subdomains")
 
 	commands.Flags().BoolP("debug", "", false, "Turn on debug mode")
-	commands.Flags().BoolP("json", "", false, "Enable JSON output")
-	commands.Flags().BoolP("verbose", "v", false, "Turn on verbose")
+	commands.Flags().BoolP("json", "", true, "Enable JSON output")
+	commands.Flags().BoolP("verbose", "v", true, "Turn on verbose")
 	commands.Flags().BoolP("quiet", "q", false, "Suppress all the output and only show URL")
 	commands.Flags().BoolP("no-redirect", "", false, "Disable redirect")
 	commands.Flags().BoolP("version", "", false, "Check version")
 	commands.Flags().BoolP("length", "l", false, "Turn on length")
-	commands.Flags().BoolP("raw", "R", false, "Enable raw output")
+	commands.Flags().BoolP("raw", "R", true, "Enable raw output")
 
 	commands.Flags().SortFlags = false
 	if err := commands.Execute(); err != nil {

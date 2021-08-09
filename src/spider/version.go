@@ -1,7 +1,7 @@
 package spider
 
 const (
-	CLIName = "gospider"
-	AUTHOR  = "@thebl4ckturtle & @j3ssiejjj"
-	VERSION = "v1.1.6"
+	CLIName = "spider"
+	AUTHOR  = "jelly"
+	VERSION = "v1.0"
 )
